@@ -4,7 +4,7 @@ header, nav, section, footer, div {
 /* 임시 줄긋기 */
 .container {
     width: 100%;
-    height: 800px;
+    height: 1500px;
 }
 header {
     width: 100%;
@@ -17,22 +17,24 @@ header {
     }
         header .logo > div:first-child {
             float: left;
-            width: 75px;
-            height: 75px;
-            padding-left: 50px;
-            padding-top: 40px;
+            width: 50%;
+            height: 100%;
         }
             header .logo img {
                 width: 65px;
                 height: 65px;
+                padding-top: 40px;
+                padding-left: 100px;
             }
         header .siteName {
             float: left;
-            width: 150px;
-            height: 50px;
-            padding-left: 20px;
-            padding-top: 60px;
+            width: 50%;
+            height: 100%;
         }
+            header .siteName > div {
+                padding-left: 50px;
+                padding-top: 70px;
+            }
     header nav {
         float: left;
         width: 34%;
@@ -40,9 +42,8 @@ header {
     }
         header nav > div {
             width: 250px;
-            height: 50px;
             padding-left: 40px;
-            padding-top: 60px;
+            padding-top: 70px;
         }
             header nav ul {
                 display: flex;
@@ -55,30 +56,144 @@ header {
     header .user-actions-container {
         float: left;
         width: 33%;
-        height: 100%;
     }
     header .user-actions-container > div {
         padding-left: 100px;
         padding-top: 50px;
     }
 main {
+    display: flex;
     width: 100%;
-    height: 500px;
+    height: 1000px;
 }
-    main .mainTop {
-        width: 67%;
-        height: 80%;
+    main > div:first-child {
+        width: 75%;
+        height: 100%;
     }
-    main .mainDown {
-        width: 67%;
-        height: 20%;
+    main > div:last-child {
+        width: 25%;
+        height: 100%;
     }
-    /* main .mainSide {
-        width: 30%;
-        height: 95%;
-    } */
+        main .mainTop {
+            width: 100%;
+            height: 85%;
+        }
+            main .mainTopTop {
+                width: 100%;
+                height: 33.3%;
+            }
+                main .mainTopTop div {
+                    float: left;
+                    width: 50%;
+                    height: 100%;
+                }
+                    .mainTop img {
+                        padding-left: 30px;
+                        padding-top: 40px;
+                    }
+                    .mainTop p {
+                        text-align: center;
+                    }
+            main .mainTopMiddle {
+                width: 100%;
+                height: 33.3%;
+            }
+                main .mainTopMiddle div {
+                    float: left;
+                    width: 50%;
+                    height: 100%;
+                }
+            main .mainTopDown {
+                width: 100%;
+                height: 33.3%;
+            }
+                main .mainTopDown div {
+                    float: left;
+                    width: 50%;
+                    height: 100%;
+                }
+        main .mainDown {
+            width: 100%;
+            height: 15%;
+        }
+            .mainDown ul {
+                padding-left: 100px;
+                padding-top: 50px;
+            }
+        main .mainSide {
+            display: flex;
+            width: 100%;
+            height: 100%;
+        }
+            .vertical-line {
+                float: left;
+                width: 5%;
+                height: 100%;
+                border-left: 1px solid black;
+                height: 500px;
+                margin-left: 1px;
+            }
+            .mainSide div:last-child {
+                width: 90%;
+                display: flex;
+                flex-direction: column;
+            }
+                .mainSideTop {
+                    flex: 1;
+                    width: 100%;
+                    height: 25%;
+                }
+                .mainSideMiddle {
+                    flex: 1;
+                    width: 100%;
+                    height: 25%;
+                }
+                .mainSideDown {
+                    flex: 1;
+                    width: 100%;
+                    height: 50%;
+                }
 footer {
-
     width: 100%;
-    height: 150px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
 }
+    footer > div:first-child {
+        width: 100%;
+        height: 30%;
+        background-color: blanchedalmond;
+    }
+    footer > div:last-child {
+        width: 100%;
+        height: 70%;
+    }
+        footer .footerLeft {
+            float: left;
+            width: 33%;
+            height: 100%;
+        }
+            .footerLeft > div:first-child {
+                width: 100%;
+                height: 60%;
+            }
+                .footerLeft img {
+                    width: 65px;
+                    height: 65px;
+                    padding-top: 35px;
+                    padding-left: 100px;
+                }
+            .footerLeft > div:last-child {
+                width: 100%;
+                height: 40%;
+            }
+        footer .footerMiddle {
+            float: left;
+            width: 34%;
+            height: 100%;
+        }
+        footer .footerRight {
+            float: left;
+            width: 33%;
+            height: 100%;
+        }
