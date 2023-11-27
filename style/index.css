@@ -12,21 +12,49 @@ header {
         height: 100%;
         background-color: aqua;
     }
+        header .logo > div:first-child {
+            float: left;
+            width: 75px;
+            height: 75px;
+            padding-left: 50px;
+            padding-top: 40px;
+        }
+        header .siteName {
+            float: left;
+            width: 150px;
+            height: 50px;
+            padding-left: 20px;
+            padding-top: 60px;
+        }
     header nav {
         float: left;
         width: 34%;
         height: 100%;
-        background-color: blueviolet;
+        background-color: lightcyan;
     }
-        header nav li {
-            float: left;
-            width: 25%;
+        header nav > div {
+            width: 250px;
+            height: 50px;
+            padding-left: 40px;
+            padding-top: 60px;
         }
+            header nav ul {
+                display: flex;
+                justify-content: space-between;
+                text-align: center;
+            }
+            header nav li {
+                float: left;
+            }
     header .user-actions-container {
         float: left;
         width: 33%;
         height: 100%;
         background-color: bisque;
+    }
+    header .user-actions-container > div {
+        padding-left: 100px;
+        padding-top: 40px;
     }
 main {
     background-color: darkkhaki;
