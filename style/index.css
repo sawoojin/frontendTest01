@@ -1,3 +1,7 @@
+header, nav, section, footer, div {
+    outline: 1px solid black;
+}
+/* 임시 줄긋기 */
 .container {
     width: 100%;
     height: 800px;
@@ -10,7 +14,6 @@ header {
         float: left;
         width: 33%;
         height: 100%;
-        background-color: aqua;
     }
         header .logo > div:first-child {
             float: left;
@@ -19,6 +22,10 @@ header {
             padding-left: 50px;
             padding-top: 40px;
         }
+            header .logo img {
+                width: 65px;
+                height: 65px;
+            }
         header .siteName {
             float: left;
             width: 150px;
@@ -30,7 +37,6 @@ header {
         float: left;
         width: 34%;
         height: 100%;
-        background-color: lightcyan;
     }
         header nav > div {
             width: 250px;
@@ -50,19 +56,29 @@ header {
         float: left;
         width: 33%;
         height: 100%;
-        background-color: bisque;
     }
     header .user-actions-container > div {
         padding-left: 100px;
-        padding-top: 40px;
+        padding-top: 50px;
     }
 main {
-    background-color: darkkhaki;
     width: 100%;
     height: 500px;
 }
+    main .mainTop {
+        width: 67%;
+        height: 80%;
+    }
+    main .mainDown {
+        width: 67%;
+        height: 20%;
+    }
+    /* main .mainSide {
+        width: 30%;
+        height: 95%;
+    } */
 footer {
-    background-color: lightcyan;
+
     width: 100%;
     height: 150px;
 }
