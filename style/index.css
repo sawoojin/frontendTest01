@@ -1,14 +1,19 @@
-header, nav, section, footer, div {
+/* header, nav, section, footer, div {
     outline: 1px solid black;
-}
+} */
 /* 임시 줄긋기 */
 .container {
     width: 100%;
+    min-width: 1000px;
     height: 1500px;
 }
 header {
     width: 100%;
     height: 150px;
+    background-image: url('https://via.placeholder.com/1200x150');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
     header .logo {
         float: left;
@@ -19,13 +24,11 @@ header {
             float: left;
             width: 50%;
             height: 100%;
+            background-image: url('/images/logo.png');
+            background-size: 70px 70px;
+            background-position: center; /* 이미지 중앙 정렬 */
+            background-repeat: no-repeat;
         }
-            header .logo img {
-                width: 65px;
-                height: 65px;
-                padding-top: 40px;
-                padding-left: 100px;
-            }
         header .siteName {
             float: left;
             width: 50%;
@@ -41,7 +44,7 @@ header {
         height: 100%;
     }
         header nav > div {
-            width: 250px;
+            width: 100%;
             padding-left: 40px;
             padding-top: 70px;
         }
@@ -58,7 +61,7 @@ header {
         width: 33%;
     }
     header .user-actions-container > div {
-        padding-left: 100px;
+        padding-left: 50px;
         padding-top: 50px;
     }
 main {
@@ -76,7 +79,7 @@ main {
     }
         main .mainTop {
             width: 100%;
-            height: 85%;
+            height: 88%;
         }
             main .mainTopTop {
                 width: 100%;
@@ -89,7 +92,7 @@ main {
                 }
                     .mainTop img {
                         padding-left: 30px;
-                        padding-top: 40px;
+                        padding-top: 60px;
                     }
                     .mainTop p {
                         text-align: center;
@@ -114,11 +117,11 @@ main {
                 }
         main .mainDown {
             width: 100%;
-            height: 15%;
+            height: 12%;
         }
             .mainDown ul {
-                padding-left: 100px;
-                padding-top: 50px;
+                padding-left: 50px;
+                padding-top: 30px;
             }
         main .mainSide {
             display: flex;
@@ -128,30 +131,30 @@ main {
             .vertical-line {
                 float: left;
                 width: 5%;
-                height: 100%;
+                height: 70%;
                 border-left: 1px solid black;
-                height: 500px;
                 margin-left: 1px;
+                margin-top: 20%;
             }
             .mainSide div:last-child {
-                width: 90%;
-                display: flex;
+                width: 100%;
+                /* display: flex; */
                 flex-direction: column;
             }
                 .mainSideTop {
-                    flex: 1;
+                    /* flex: 1; */
                     width: 100%;
-                    height: 25%;
+                    height: 30%;
                 }
                 .mainSideMiddle {
-                    flex: 1;
+                    /* flex: 1; */
                     width: 100%;
-                    height: 25%;
+                    height: 30%;
                 }
                 .mainSideDown {
-                    flex: 1;
+                    /* flex: 1; */
                     width: 100%;
-                    height: 50%;
+                    height: 40%;
                 }
 footer {
     width: 100%;
@@ -162,7 +165,8 @@ footer {
     footer > div:first-child {
         width: 100%;
         height: 30%;
-        background-color: blanchedalmond;
+        background-color: rgba(0, 0, 0, .1);
+        box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, .1), inset 0 0.125em 0.5em rgba(0, 0, 0, .15);
     }
     footer > div:last-child {
         width: 100%;
@@ -176,16 +180,15 @@ footer {
             .footerLeft > div:first-child {
                 width: 100%;
                 height: 60%;
+                background-image: url(/images/logo.png);
+                background-size: 50px 50px;
+                background-position: center;
+                background-repeat: no-repeat;
             }
-                .footerLeft img {
-                    width: 65px;
-                    height: 65px;
-                    padding-top: 35px;
-                    padding-left: 100px;
-                }
             .footerLeft > div:last-child {
                 width: 100%;
                 height: 40%;
+                text-align: right;
             }
         footer .footerMiddle {
             float: left;
@@ -197,3 +200,8 @@ footer {
             width: 33%;
             height: 100%;
         }
+            .footerRight > label {
+                padding-top: 60px;
+                padding-left: 40%;
+                /* text-align: center; */
+            }
