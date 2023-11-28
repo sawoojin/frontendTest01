@@ -1,0 +1,18 @@
+main {
+    height: 800px;
+    display: flex;
+    align-items: center; /* 수직 가운데 정렬 */
+    justify-content: center; /* 수평 가운데 정렬 */
+}
+    main > form {
+        width: 40%;
+        height: auto;
+    }
+        .form-btn {
+            display: flex;
+            justify-content: space-around;
+        }
+            .form-btn button {
+                width: 28%;
+                height: 100%;
+            }

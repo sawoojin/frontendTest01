@@ -64,6 +64,7 @@ header {
         padding-left: 50px;
         padding-top: 50px;
     }
+    /* ------------------------------------------------- main 공통 헤더 ------- */
 main {
     display: flex;
     width: 100%;
@@ -156,6 +157,7 @@ main {
                     width: 100%;
                     height: 40%;
                 }
+    /* ------------------------------------------------- main 공통 푸터 ------- */
 footer {
     width: 100%;
     height: 250px;
