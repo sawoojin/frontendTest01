@@ -53,7 +53,47 @@
             </div>
         </header>
         <!-- ----------------------------------------------- main 공통 헤더 ------->
-        <div class="delete"></div>
+        <main>
+            <div class="mainLeft">
+                <form>
+                    <div class="row g-3 col-md-8 offset-md-2">
+                        <div class="mb-5">
+                            <label for="userId" class="form-label">내 아이디</label>
+                            <input type="id" class="form-control" id="userId">
+                        </div>
+                    </div>
+                    <div class="row g-3 col-md-8 offset-md-2">
+                        <div class="mb-5">
+                            <label for="userEmail" class="form-label">내 이메일</label>
+                            <input type="email" class="form-control" id="userEmail" placeholder="name@example.com">
+                            <div id="emailHelp" class="form-text">이메일 변경은 이메일 인증 이후 가능합니다.</div>
+                        </div>
+                    </div>
+                    <div class="d-grid justify-content-md-end">
+                        <button type="button" class="btn btn-secondary btn-md me-md-2">이메일 인증</button>
+                    </div>
+                </form>
+                <div class="mainLeft-down">
+                    <label for="">
+                        <h4>계정삭제</h4>
+                        <p>계정 삭제 후에는 모든 개인정보는 완전히 삭제되어 복구가 불가능합니다.<br>
+                        작성한 게시물은 삭제되지 않으며, 익명처리 될 수 있습니다.
+                        </p>
+                    </label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                        <label class="form-check-label" for="flexCheckChecked">
+                        계정 삭제 정책에 동의합니다.
+                        </label>
+                        <div class="d-grid justify-content-md-end">
+                            <button type="button" class="btn btn-outline-danger btn-md me-md-2">회원 탈퇴</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mainRight"></div>
+            
+        </main>
         <!-- ----------------------------------------------- main 공통 푸터 ------->
         <footer>
             <div></div>

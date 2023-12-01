@@ -65,10 +65,26 @@ header {
         padding-top: 50px;
     }
        /* ------------------------------------------------- main 공통 헤더 ------- */
-.delete {
+main {
     width: 100%;
-    height: 600px;
+    height: 700px;
 }
+    main .mainUp {
+        width: 100%;
+        height: 150px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    main .mainMiddle {
+        width: 80%;
+        height: 450px;
+        padding-left: 10%;
+    }
+    main .mainDown {
+        width: 100%;
+        height: 100px;
+    }
     /* ------------------------------------------------- main 공통 푸터 ------- */
 footer {
     width: 100%;
