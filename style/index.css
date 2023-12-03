@@ -4,13 +4,16 @@
 /* 임시 줄긋기 */
 .container {
     width: 100%;
+    max-width: 100%;
     min-width: 1000px;
-    height: 1500px;
+    height: 1700px;
 }
 header {
     width: 100%;
-    height: 150px;
-    background-image: url('https://via.placeholder.com/1200x150');
+    /* width: 1900px; */
+    height: 350px;
+    /* background-image: url('https://via.placeholder.com/1200x150'); */
+    background-image: url('../images/header.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -26,7 +29,8 @@ header {
             height: 100%;
             background-image: url('/images/logo.png');
             background-size: 70px 70px;
-            background-position: center; /* 이미지 중앙 정렬 */
+            background-position-x: 3cm ;
+            background-position-y: 0.6cm;
             background-repeat: no-repeat;
         }
         header .siteName {
@@ -35,8 +39,8 @@ header {
             height: 100%;
         }
             header .siteName > div {
-                padding-left: 50px;
-                padding-top: 70px;
+                padding-left: 40px;
+                padding-top: 40px;
             }
     header nav {
         float: left;
@@ -67,7 +71,9 @@ header {
     /* ------------------------------------------------- main 공통 헤더 ------- */
 main {
     display: flex;
+    padding-left: 15%;
     width: 100%;
+    max-width: 1300px;
     height: 1000px;
 }
     main > div:first-child {
@@ -94,6 +100,8 @@ main {
                     .mainTop img {
                         padding-left: 30px;
                         padding-top: 60px;
+                        width: 300px;
+                        /* height: 150px; */
                     }
                     .mainTop p {
                         text-align: center;
