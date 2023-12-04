@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>메인 페이지(임시)</title>
-    <link rel="stylesheet" href="/style/reset.css">
+    <title>홈</title>
+    <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="/style/index.css">
+    <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
     <div class="container">
@@ -15,7 +15,7 @@
                 <div></div>
                 <div class="siteName">
                     <div>
-                        <label for="title" style="color: white; font-style: italic; font-size:x-large;">URBAN TOKYO</label>
+                        <a href="./index.html"><label for="title" style="color: white; font-style: italic; font-size:x-large;">URBAN TOKYO</label></a>
                         <label for="" style="color: azure; font-size: smaller;">도쿄여행정보 사이트</label>
                     </div>
                 </div>
@@ -27,13 +27,13 @@
                             <a class="nav-link active" aria-current="page" href="#">홈</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link bg-white" href="/pages/main/map.html">지도</a>
+                            <a class="nav-link bg-white text-dark" href="./pages/main/map.html">지도</a>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link bg-white" href="/pages/main/area.html">지역별</a>
+                            <a class="nav-link bg-white text-dark" href="./pages/main/area.html">지역별</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link bg-white" href="/pages/main/board.html">게시판</a>
+                            <a class="nav-link bg-white text-dark" href="./pages/main/board.html">게시판</a>
                         </li>
                     </ul>
                 </div>
@@ -42,7 +42,7 @@
                 <div>
                     <div class="login">
                         <label for="login">
-                            <a href="/pages/servise/login.html">로그인/회원가입</a>
+                            <a href="./pages/servise/login.html">로그인/회원가입</a>
                         </label>
                     </div>
                     <div>
@@ -53,52 +53,66 @@
                 </div>
             </div>
         </header>
-        <!-- ----------------------------------------------- main 공통 헤더 ------->
+        <!------------------------------------------------- 공통 헤더 ------->
         <main>
             <div>
                 <section class="mainTop">
                     <div class="mainTopTop">
                         <div>
                             <img src="./images/tokyo-eki.jpg" alt="사진1">
-                            <p>도쿄역</p>
-                            <p>붉은색 벽돌 구조 외벽으로 아름답게 복원된 도쿄역 마루노우치 역 건물은 도쿄에서 가장 인상적인 건축물 중 하나입니다.</p>
+                            <fieldset>
+                                <legend>도쿄역</legend>
+                                <p>붉은색 벽돌 구조 외벽으로 아름답게 복원된 도쿄역 마루노우치 역 건물은 도쿄에서 가장 인상적인 건축물 중 하나입니다. <br><a href="#">자세히</a></p>
+                            </fieldset>
+                            <p></p>
+                            
                         </div>
                         <div>
                             <img src="./images/ginja.jpg" alt="사진2">
-                            <p>긴자</p>
-                            <p>에도시대(1603-1868)에 은화 주조소 터에 조성된 긴자는 다른 곳에는 없는 세련된 분위기와 역사를 느낄 수 있는 거리입니다. </p>
+                            <fieldset>
+                                <legend>긴자</legend>
+                                <p>에도시대(1603-1868)에 은화 주조소 터에 조성된 긴자는 다른 곳에는 없는 세련된 분위기와 역사를 느낄 수 있는 거리입니다. <br><a href="#">자세히</a></p>
+                            </fieldset>
                         </div>
                     </div>
                     <div class="mainTopMiddle">
                         <div>
                             <img src="./images/shinjuku.jpg" alt="사진3">
-                            <p>신주쿠</p>
-                            <p>직장인, 학생, 해외 관광객 등의 무리가 한꺼번에 ‘신주쿠’역의 개찰구를 지나 고층 빌딩숲, 넓은 구역에 걸친 번화가, 무수한 카페와 바, 레스토랑 등으로 매일같이 제각각 들어갑니다.</p>
+                            <fieldset>
+                                <legend>신주쿠</legend>
+                                <p>수많은 사람들이 ‘신주쿠’역의 개찰구를 지나 고층 빌딩숲, 넓은 구역에 걸친 번화가, 무수한 카페와 바, 레스토랑 등으로 매일같이 제각각 들어갑니다. <br><a href="#">자세히</a></p>
+                            </fieldset>
                         </div>
                         <div>
                             <img src="./images/shibuya.jpg" alt="사진4">
-                            <p>시부야</p>
-                            <p>시부야를 상징하는 스크램블 교차로를 담은 예술적인 사진은 세계적인 패션잡지나 여행잡지의 페이지를 장식하고 있지만,</p>
+                            <fieldset>
+                                <legend>시부야</legend>
+                                <p>시부야를 상징하는 스크램블 교차로를 담은 예술적인 사진은 세계적인 패션잡지나 여행잡지의 페이지를 장식하고 있습니다. <br><a href="#">자세히</a></p>
+                            </fieldset>
                         </div>
                     </div>
                     <div class="mainTopDown">
                         <div>
                             <img src="./images/ueno.jpg" alt="사진5">
-                            <p>우에노</p>
-                            <p>사람들로 붐비는 교통의 거점 ‘우에노’역을 나오면, 문화와 예술, 레크리에이션을 즐길 수 있는 차분한 공간이 나옵니다. </p>
+                            <fieldset>
+                                <legend>우에노</legend>
+                                <p>사람들로 붐비는 교통의 거점 ‘우에노’역을 나오면, 문화와 예술, 레크리에이션을 즐길 수 있는 차분한 공간이 나옵니다. <br><a href="#">자세히</a></p>
+                            </fieldset>
                         </div>
                         <div>
                             <img src="./images/asakusa.jpg" alt="사진6">
-                            <p>아사쿠사</p>
-                            <p>‘가미나리몬 문’과 ‘나카미세 거리’에 있는 ‘센소지 절’을 중심으로 한 지역 아사쿠사는 물에 둘러싸여 있으며 풍부한 전통을 자랑하는 곳입니다.</p>
+                            <fieldset>
+                                <legend>아사쿠사</legend>
+                                <p>‘가미나리몬 문’과 ‘나카미세 거리’에 있는 ‘센소지 절’을 중심으로 한 지역 아사쿠사는 물에 둘러싸여 있으며 풍부한 전통을 자랑하는 곳입니다. <br><a href="#">자세히</a></p>
+                            </fieldset>
                         </div>
                     </div>
                 </section>
                 <section class="mainDown">
                     <ul>
-                        <li><a href="https://www.gotokyo.org/kr/index.html">https://www.gotokyo.org/kr/index.html</a></li>
-                        <li><a href="https://livejapan.com/ko/in-tokyo/">https://livejapan.com/ko/in-tokyo/</a></li>
-                        <li><a href="https://travel.naver.com/overseas/JPTYO298184/city/summary">https://travel.naver.com/overseas/JPTYO298184/city/summary</a></li>
+                        <li>도쿄 관광 공식 사이트 : <a href="https://www.gotokyo.org/kr/index.html" target="_blank">https://www.gotokyo.org/kr</a></li>
+                        <li>라이브 재팬 : <a href="https://livejapan.com/ko/in-tokyo/" target="_blank">https://livejapan.com/ko/in-tokyo/</a></li>
+                        <li>네이버 도쿄 여행 : <a href="https://travel.naver.com/overseas/JPTYO298184/city/summary" target="_blank">https://travel.naver.com/overseas/JPTYO298184/city/summary</a></li>
                     </ul>
                 </section>
             </div>
@@ -119,22 +133,20 @@
                 </section>
             </div>
         </main>
-        <!-- ----------------------------------------------- main 공통 푸터 ------->
+        <!------------------------------------------------- 공통 푸터 ------->
         <footer>
             <div></div>
             <div>
                 <div class="footerLeft">
                     <div></div>
                     <div>
-                        <label for="terms">이용약관 | </label>
-                        <label for="policy">개인정보처리방침</label>
+                        <a href=""><label for="terms" class="text-dark">이용약관 | </label></a>
+                        <a href=""><label for="policy" class="text-dark">개인정보처리방침</label></a>
                     </div>
                 </div>
-                <div class="footerMiddle">
-    
-                </div>
+                <div class="footerMiddle"></div>
                 <div class="footerRight">
-                    <label>본 페이지의 모든 권리는<br>제작자에게 있습니다.</label>
+                    <label>본 페이지의 모든 권리는<br>제작자에게 있습니다. <br><br>문의 : secondtrumpet22@gmail.com</label>
                 </div>
             </div>
         </footer>

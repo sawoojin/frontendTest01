@@ -6,13 +6,11 @@
     width: 100%;
     max-width: 100%;
     min-width: 1000px;
-    height: 1700px;
+    background-color: #fcfeff;
 }
 header {
     width: 100%;
-    /* width: 1900px; */
     height: 350px;
-    /* background-image: url('https://via.placeholder.com/1200x150'); */
     background-image: url('../images/header.jpg');
     background-size: cover;
     background-position: center;
@@ -27,9 +25,9 @@ header {
             float: left;
             width: 50%;
             height: 100%;
-            background-image: url('/images/logo.png');
+            background-image: url('../images/logo.png');
             background-size: 70px 70px;
-            background-position-x: 3cm ;
+            background-position-x: 80%;
             background-position-y: 0.6cm;
             background-repeat: no-repeat;
         }
@@ -65,23 +63,28 @@ header {
         width: 33%;
     }
     header .user-actions-container > div {
-        padding-left: 50px;
-        padding-top: 50px;
+        padding-left: 20%;
+        padding-right: 20%;
+        padding-top: 40px;
     }
-    /* ------------------------------------------------- main 공통 헤더 ------- */
+        .user-actions-container .login {
+            padding-bottom: 6px;
+        }
+    /*------------------------------------------------- 공통 헤더 -------*/
 main {
     display: flex;
-    padding-left: 15%;
+    padding-left: 10%;
     width: 100%;
     max-width: 1300px;
-    height: 1000px;
+    height: 1250px;
 }
     main > div:first-child {
-        width: 75%;
+        padding-top: 25px;
+        width: 80%;
         height: 100%;
     }
     main > div:last-child {
-        width: 25%;
+        width: 20%;
         height: 100%;
     }
         main .mainTop {
@@ -98,13 +101,19 @@ main {
                     height: 100%;
                 }
                     .mainTop img {
-                        padding-left: 30px;
+                        padding-left: 40px;
                         padding-top: 60px;
                         width: 300px;
                         /* height: 150px; */
                     }
-                    .mainTop p {
-                        text-align: center;
+                    .mainTop legend {
+                        padding-top: 2.5%;
+                    }
+                    .mainTop p, legend {
+                        text-align:left;
+                        width: 95%;
+                        padding-left: 30px;
+                        padding-right: 60px;
                     }
             main .mainTopMiddle {
                 width: 100%;
@@ -129,8 +138,9 @@ main {
             height: 12%;
         }
             .mainDown ul {
-                padding-left: 50px;
-                padding-top: 30px;
+                text-align: left;
+                padding-left: 30px;
+                padding-top: 40px;
             }
         main .mainSide {
             display: flex;
@@ -140,10 +150,10 @@ main {
             .vertical-line {
                 float: left;
                 width: 5%;
-                height: 70%;
+                height: 85%;
                 border-left: 1px solid black;
-                margin-left: 1px;
-                margin-top: 20%;
+                margin-left: 20px;
+                margin-top: 25%;
             }
             .mainSide div:last-child {
                 width: 100%;
@@ -165,12 +175,13 @@ main {
                     width: 100%;
                     height: 40%;
                 }
-    /* ------------------------------------------------- main 공통 푸터 ------- */
+    /*------------------------------------------------- 공통 푸터 -------*/
 footer {
     width: 100%;
     height: 250px;
     display: flex;
     flex-direction: column;
+    background-color: #f9fffe;
 }
     footer > div:first-child {
         width: 100%;
@@ -190,15 +201,16 @@ footer {
             .footerLeft > div:first-child {
                 width: 100%;
                 height: 60%;
-                background-image: url(/images/logo.png);
+                background-image: url(../images/logo.png);
                 background-size: 50px 50px;
-                background-position: center;
+                background-position-x: 35%;
+                background-position-y: 80%;
                 background-repeat: no-repeat;
             }
             .footerLeft > div:last-child {
                 width: 100%;
                 height: 40%;
-                text-align: right;
+                text-align: center;
             }
         footer .footerMiddle {
             float: left;
@@ -211,7 +223,5 @@ footer {
             height: 100%;
         }
             .footerRight > label {
-                padding-top: 60px;
-                padding-left: 40%;
-                /* text-align: center; */
+                padding-top: 5%;
             }

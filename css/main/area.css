@@ -4,13 +4,14 @@
 /* 임시 줄긋기 */
 .container {
     width: 100%;
+    max-width: 100%;
     min-width: 1000px;
-    height: 1500px;
+    background-color: #fcfeff;
 }
 header {
     width: 100%;
-    height: 150px;
-    background-image: url('https://via.placeholder.com/1200x150');
+    height: 350px;
+    background-image: url('../../images/header.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -24,9 +25,10 @@ header {
             float: left;
             width: 50%;
             height: 100%;
-            background-image: url('/images/logo.png');
+            background-image: url('../../images/logo.png');
             background-size: 70px 70px;
-            background-position: center; /* 이미지 중앙 정렬 */
+            background-position-x: 80%;
+            background-position-y: 0.6cm;
             background-repeat: no-repeat;
         }
         header .siteName {
@@ -35,8 +37,8 @@ header {
             height: 100%;
         }
             header .siteName > div {
-                padding-left: 50px;
-                padding-top: 70px;
+                padding-left: 40px;
+                padding-top: 40px;
             }
     header nav {
         float: left;
@@ -61,10 +63,14 @@ header {
         width: 33%;
     }
     header .user-actions-container > div {
-        padding-left: 50px;
-        padding-top: 50px;
+        padding-left: 20%;
+        padding-right: 20%;
+        padding-top: 40px;
     }
-       /* ------------------------------------------------- main 공통 헤더 ------- */
+        .user-actions-container .login {
+            padding-bottom: 6px;
+        }
+    /*------------------------------------------------- 공통 헤더 -------*/
 main {
     width: 100%;
     height: 900px;
@@ -94,12 +100,13 @@ main {
             padding-left: 60px;
             /* padding-bottom: px; */
         }
-    /* ------------------------------------------------- main 공통 푸터 ------- */
+    /*------------------------------------------------- 공통 푸터 -------*/
 footer {
     width: 100%;
     height: 250px;
     display: flex;
     flex-direction: column;
+    background-color: #f9fffe;
 }
     footer > div:first-child {
         width: 100%;
@@ -119,15 +126,16 @@ footer {
             .footerLeft > div:first-child {
                 width: 100%;
                 height: 60%;
-                background-image: url(/images/logo.png);
+                background-image: url(../images/logo.png);
                 background-size: 50px 50px;
-                background-position: center;
+                background-position-x: 35%;
+                background-position-y: 80%;
                 background-repeat: no-repeat;
             }
             .footerLeft > div:last-child {
                 width: 100%;
                 height: 40%;
-                text-align: right;
+                text-align: center;
             }
         footer .footerMiddle {
             float: left;
@@ -140,7 +148,5 @@ footer {
             height: 100%;
         }
             .footerRight > label {
-                padding-top: 60px;
-                padding-left: 40%;
-                /* text-align: center; */
+                padding-top: 5%;
             }

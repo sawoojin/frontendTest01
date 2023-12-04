@@ -5,10 +5,9 @@ main {
     justify-content: center; /* 수평 가운데 정렬 */
 }
     main > form {
-        width: 40%;
+        width: 25%;
         height: auto;
     }
-    .form-btn {
-        display: flex;
-        justify-content: space-around;
+    main > form > div:first-child {
+        text-align: center;
     }
