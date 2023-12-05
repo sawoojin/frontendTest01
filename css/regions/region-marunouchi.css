@@ -74,39 +74,14 @@ header {
 main {
     width: 100%;
     height: 800px;
-    /* display: flex; */
+    text-align: center;
+    display: flex;
+    justify-content: center;
 }
-    .mainLeft {
-        float: left;
-        width: 67%;
-        height: 100%;
-        padding-left: 10%;
+    main > div {
+        width: 70%;
+        background: linear-gradient(to right,  #ffffff, rgb(182, 160, 142), #ffffff);
     }
-        .mainLeft > form {
-            width: 70%;
-            height: 60%;
-            padding-top: 15%;
-        }
-        .mainLeft > .mainLeft-down {
-            width: 100%;
-            height: 40%;
-            padding-top: 5%;
-            padding-left: 12%;
-        }
-        .mainLeft-down > label {
-            height: 150px;
-        }
-            .token {
-                width: 610px;
-            }
-    .mainRight {
-        float: left;
-        width: 33%;
-        height: 100%;
-    }
-        .btnGtfo {
-            width: 440px;
-        }
     /*------------------------------------------------- 공통 푸터 -------*/
     footer {
         width: 100%;

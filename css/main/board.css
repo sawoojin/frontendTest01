@@ -77,11 +77,11 @@ main {
 }
     main .mainUp {
         width: 100%;
-        height: 150px;
+        height: 100px;
         display: flex;
         justify-content: space-around;
         align-items: center;
-        
+        background-color: rgb(249, 223, 204);
     }
     main .mainMiddle {
         height: 450px;

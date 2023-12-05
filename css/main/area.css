@@ -77,8 +77,10 @@ main {
 }
     main .labelTag {
         width: 100%;
-        padding-top: 50px;
+        height: 100px;
+        padding-top: 30px;
         text-align: center;
+        background-color: rgb(249, 223, 204);
     }
     main .areaDiv {
         float: left;
@@ -89,6 +91,9 @@ main {
         align-items: baseline;
         flex-direction: column;
         gap: 20px;
+    }
+    .areaDiv p {
+        color: black;
     }
     main .areaDiv2 {
         padding-left: 0;
